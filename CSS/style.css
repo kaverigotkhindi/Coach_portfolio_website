@@ -3,18 +3,22 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    
+}
+body{
+    --font-color : #444;
 }
 .menu-bars{
     display: none;
 }
-.container{
-    
-}
+
 nav{
     background-color: #036861;
     height: 8.5rem;
     position: relative;
     align-items: center;
+    
+    
 }
 #click{
     display: none;
@@ -22,6 +26,7 @@ nav{
 ul{
     display: flex;
     justify-content: space-evenly;
+    flex-direction: row;
     background-color: #fff;
     margin-top: 1.5rem;
     padding: 0.5rem;
@@ -35,11 +40,54 @@ li{
 }
 li a{
     text-decoration: none;
-    color: #444;
+    color: var(--font-color);
 }
 li a:hover{
     color: #99c2bf;
 }
-main img{
+@media all and (max-width:530px){
+    nav{
+        width: 100vw;
+        height: 100vh;        
+        background-color: #fff;
+        overflow-x: hidden;
+        /* flex-wrap: wrap; */
+        
+    }
+    ul{
+        right: -110%;
+        top:2rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content:flex-start;
+        transition: all 0.3s ease;
+        z-index: 2;
+    }
+    li{
+        padding: 1rem;
+    }
+    li a{
+        font-weight: 700;
+    }
+    .logo{
+        position: fixed;
+        left: 0.2rem;
+        top: 1rem;
+        /* background-color: aqua; */
+        padding: 0;
+        margin-left: 0.2rem;
+    }
+    .menu-bars{
+        position: absolute;
+        font-size: 2.5rem;
+        display: block;
+        color: #036861;
+        right: 0.2rem;
+        top: 1rem;
+    }
+    #click:checked ~ul{
+        right:0;
+    }
+    }
     
-}
+
