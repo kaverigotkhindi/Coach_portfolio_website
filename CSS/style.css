@@ -45,9 +45,12 @@ li a{
 li a:hover{
     color: #99c2bf;
 }
+main{
+    
+}
 @media all and (max-width:530px){
     nav{
-        width: 100vw;
+        width: 100%;
         background-color: #fff;
         overflow-x: hidden;
         z-index: 2;
