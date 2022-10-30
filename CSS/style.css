@@ -101,6 +101,12 @@ main{
     
     z-index: 3;
 }
+.main-heading span{
+    text-transform: capitalize;
+    color: #036861;
+    font-size:1.2rem;
+    font-weight: 500;
+}
 main h1{
     
     font-size: 2rem;
