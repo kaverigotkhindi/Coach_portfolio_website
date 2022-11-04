@@ -152,21 +152,24 @@ padding: 2rem;
 .cta p{
     font-size: 1.2rem;
     text-align: center;
+    font-weight:800;
 }
 .cta ul{
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    max-width: fit-content;
+    align-items:stretch;
+    max-width: 70vw;
+    margin: auto;
 }
 .cta li{
-    width: calc(70% / 3);
-    height:max-content;
+    flex: 1;
+    /* height:max-content; */
     padding: 0.5rem;
     border: 1px solid var(--green);
     display:block;
-    margin-left: 0.2rem;
+    margin-left: 0.5rem;
     margin-top: 1rem;
+    box-shadow: 0px 0px 2px rgb(96, 197, 185);
 }
 .cta button {
    margin-left: calc(50% - 10rem);
@@ -205,7 +208,7 @@ padding: 2rem;
         position: fixed;
         left: 0.7rem;
         top: 0.5rem;
-        
+        background-color: #f3c35c;
         padding: 0;
         margin-left: 0.2rem;
     }
@@ -216,6 +219,7 @@ padding: 2rem;
         color: var(--green);
         right: 0.7rem;
         top: 0.8rem;
+        background-color: #f3c35c;
     }
     
     #click:checked ~ul{
@@ -253,8 +257,20 @@ padding: 2rem;
     .hero-picture{
         background-position: bottom center;
     }
-    .cta li{
-      width: calc(90vw / 3)
+    .cta ul{
+        display: block;
+        width: 70%;
+        margin: auto;
+        text-align: center;
+        
+    }
+    .cta li {
+        box-shadow: 0 0 3px rgb(96, 197, 185);
+
+    }
+
+    .download-guide button , .cta button{
+        font-size: 1rem;
     }
 
     }
