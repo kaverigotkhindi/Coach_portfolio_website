@@ -199,11 +199,12 @@ footer p{
 }
 
 /* Results page starts*/
-h1{
+#results h1{
     text-align: center;
     color: var(--green);
-    margin: 2rem;
+    margin: 3rem;
     font-size: 1.5rem;
+
 }
 .cont-results{
     display: flex;
@@ -215,22 +216,30 @@ h1{
     margin: auto;
 }
 .result{
+    position: relative;
     text-align: center;
-    height: 60vh;
+    /* height: 60vh; */
     width:30% ;
     font-size: 0.8rem;
     padding: 0.5rem;
     box-shadow: 0 0 5px rgb(218, 218, 218);
+    /* height:50vh; */
+    
 }
 .result h4{
     margin-bottom: 0.5rem;
 }
  
-.cont-results img{
+.result img{
     height: 200px;
     width: 250px;
-    /* border-radius: 50%; */
-    clip-path: circle();
+    /* position: absolute; */
+    clip-path: circle(34%);
+    /* top:-100%; */
+    /* left:-50%; */
+
+}
+article p{
 
 }
 @media all and (max-width:769px){
@@ -330,6 +339,16 @@ h1{
 
     .download-guide button , .cta button{
         font-size: 1rem;
+    }
+    .cont-results{
+        flex-direction: column;
+        justify-content:space-between ;
+ 
+        align-items: stretch;
+    }
+    .result{
+        width: 60vw;
+        margin: auto;
     }
 
     }
