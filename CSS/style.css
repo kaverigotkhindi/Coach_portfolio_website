@@ -216,6 +216,10 @@ footer p{
     margin: auto;
 }
 .result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     position: relative;
     text-align: center;
     /* height: 60vh; */
@@ -233,13 +237,19 @@ footer p{
 .result img{
     height: 200px;
     width: 250px;
-    /* position: absolute; */
+    /* position: fixed; */
     clip-path: circle(34%);
-    /* top:-100%; */
-    /* left:-50%; */
+  
 
 }
 article p{
+color:#fff;
+background-color: var(--green);
+font-weight: 900;
+margin:1rem;
+text-align: center;
+width: 90vw;
+margin: 10px auto;
 
 }
 @media all and (max-width:769px){
