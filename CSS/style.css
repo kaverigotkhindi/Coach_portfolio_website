@@ -258,6 +258,23 @@ width: 90vw;
 margin: 10px auto;
 
 }
+.work-with-me{
+color: var(--green);
+text-align: center;
+margin: 20px;
+
+}
+.questions{
+    color: var(--green);
+    text-align: center;
+    margin: 20px;
+   
+}
+.questions li{
+    list-style-type:decimal;
+    list-style: inside;
+    margin: 5px;
+}
 @media all and (max-width:769px){
    
     nav{
@@ -341,6 +358,7 @@ margin: 10px auto;
     .hero-picture{
         background-position: bottom center;
     }
+    
     .cta ul{
         display: block;
         width: 70%;
